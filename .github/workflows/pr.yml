@@ -1,0 +1,25 @@
+name: PR Workflow
+
+on:
+  pull_request:
+    branches:
+      - main
+    types: [opened, synchronize, reopened]
+
+jobs:
+  pr-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print PR message
+        run: |
+          echo "Pull Request detected 🚀"
+          echo "Running workflow only for PR"
+
+      - name: Run sample script
+        run: |
+          echo "Checking code..."
+          node -v || echo "Node not installed"
