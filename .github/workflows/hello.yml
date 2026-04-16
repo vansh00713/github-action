@@ -11,3 +11,4 @@ jobs:
         run: |
           echo "Hello, Vansh"
           echo "Welcome to GitHub Actions"
+          echo "bye from job"
