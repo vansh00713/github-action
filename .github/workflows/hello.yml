@@ -2,21 +2,20 @@ name: My First Workflow
 
 on: push
 
-jobs 1:
+jobs:
   say-hello:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print name
+      - name: Print hello
         run: |
           echo "Hello, Vansh"
           echo "Welcome to GitHub Actions"
 
-jobs 2:
-  say-hello:
-    run-on: ubuntu latest
+  say-bye:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Print name
-    run: |
-    echo: "bye from work"
+      - name: Print bye
+        run: |
+          echo "Bye from work"
