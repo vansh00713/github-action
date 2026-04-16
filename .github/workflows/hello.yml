@@ -1,14 +1,13 @@
-name : My First Workflow
+name: My First Workflow
 
 on: push
 
-
 jobs:
-    say-hello;
-      runs-on: ubuntu-latest
+  say-hello:
+    runs-on: ubuntu-latest
 
-      steps:
-          -name: Print name
-          run:
-            echo "Hello, Vansh"
-            echo "Welcome to GitHub Actions" 
+    steps:
+      - name: Print name
+        run: |
+          echo "Hello, Vansh"
+          echo "Welcome to GitHub Actions"
