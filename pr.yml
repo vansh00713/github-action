@@ -16,7 +16,7 @@ jobs:
 
       - name: Print PR message
         run: |
-          echo "Pull Request detected 🚀"
+          echo "Pull Request detected "
           echo "Running workflow only for PR"
 
       - name: Run sample script
