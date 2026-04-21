@@ -30,7 +30,7 @@ jobs:
         run: ls 
 
       - name: setup node
-        uses: actions/setup-node@V4
+        uses: actions/setup-node@v4
 
       - name: install dependency
         run: npm install
