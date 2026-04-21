@@ -29,7 +29,13 @@ jobs:
       - name: list file
         run: ls 
 
-      
+      - name: setup node
+        uses: actions/setup-node@V4
+
+      - name: install dependency
+        run: npm install
+      - name: running test
+        run: npm run test
         
 
 
