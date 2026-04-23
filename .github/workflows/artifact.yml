@@ -1,0 +1,16 @@
+name: artifact
+on: push
+
+jobs:
+  job1:
+    runs-on: ubantu-latest
+    steps:
+      name: create a file 
+      run: echo "hello world" file.txt
+      name: upload on artifact
+      uses: action/upload-artifact@v4
+      with:
+        name: my-file
+        path: file.txt 
+
+ 
