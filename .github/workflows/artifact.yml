@@ -23,3 +23,10 @@ jobs:
       with:
         name: my-file
         path: file.txt 
+
+  job3:
+    runs-on: ubantu-latest
+    step: 
+      name: read file.txt
+      run: cat file.txt
+      
